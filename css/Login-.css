@@ -6,10 +6,10 @@
   }
   
   body {
-    background-image: url('fondo1.jpg');
+    background-image: url('fondo2.jpg');
   }
   
-  .form-register {
+  .Login- {
     width: 300px;
     background: #24303c;
     padding: 30px;
