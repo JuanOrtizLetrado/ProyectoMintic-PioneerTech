@@ -34,11 +34,11 @@ h1 {
 	width: 100%;
 	height: 100vh;
 	background: url(img/laptop.png);
-	background-color: rgb(134, 161, 187);
+	
 	background-blend-mode: color-burn;
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: cover;
+	background-size:cover;
 	position: relative;
 }
 
@@ -112,39 +112,16 @@ h1 {
 	margin-bottom: 20px;
 }
 
-.hero .banner .cta a {
-	display: inline-block;
-	text-decoration: none;
-	color: #e4e4e4;
-	transition-duration: .3s;
-	transition-property: background-color, color;
-}
 
-.hero .banner .cta a:first-child {
-	margin-right: 30px;
-	background: #467BFB;
-	padding: 8px 35px;
-	border-radius: 4px;
-	color: #fff;
-}
-
-.hero .banner .cta a:first-child:hover {
-	background-color: #F9C136;
-}
-
-.hero .banner .cta a:last-child:hover {
-	color: #F9C136;
-}
 .hero .banner .email {
     margin-top: 20px;
 	margin-right: 30px;
 	border-radius: 4px;
-	color: #fff;
+	color: #616263;
 }
 
 .hero .banner .email {
 	display: inline-block;
-	color: #e4e4e4;
 	transition-duration: .3s;
 	transition-property: background-color, color;
 }
@@ -165,8 +142,11 @@ h1 {
 .hero .connect .email a:focus {
 	color: #AFB2B2;
 }
-
+.hero .connect .container h4{
+	color: #fff
+}
 .hero .connect .container {
+
 	margin-top: 120px;
     padding: 0px 0px;
 }
@@ -185,18 +165,14 @@ h1 {
 }
 
 .hero .connect .container a:nth-child(1):hover {
-	color: #DF427E;
-}
-
-.hero .connect .container a:nth-child(2):hover {
-	color: #F9C136;
-}
-
-.hero .connect .container a:nth-child(3):hover {
 	color: #467BFB;
 }
 
-.hero .connect .container a:nth-child(4):hover {
+.hero .connect .container a:nth-child(2):hover {
+	color: #467BFB;
+}
+
+.hero .connect .container a:nth-child(3):hover {
 	color: #467BFB;
 }
 
