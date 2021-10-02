@@ -31,10 +31,10 @@ header {
     height: 600px;
     background: #8A2387;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(23, 89%, 54%, 0.637), hsla(352, 79%, 58%, 0.637), hsla(302, 60%, 34%, 0.637)), url(img/dos.gif);
+    background: -webkit-linear-gradient(to right, hsla(0, 89%, 54%, 0.637), hsla(258, 80%, 56%, 0.637), hsla(302, 60%, 34%, 0.637)), url(img/logo.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
     
-    background: linear-gradient(to right, hsla(23, 89%, 54%, 0.637), hsla(352, 79%, 58%, 0.637), hsla(302, 60%, 34%, 0.637)), url(img/dos.gif);
+    background: linear-gradient(to right, hsla(0, 89%, 54%, 0.637), hsla(258, 80%, 56%, 0.637), hsla(302, 60%, 34%, 0.637)), url(img/logo.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: cover;
