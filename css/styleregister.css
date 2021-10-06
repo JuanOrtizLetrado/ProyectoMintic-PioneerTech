@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url(img/fondo2.jpg)
+}
+
+.form-register {
+  width: 400px;
+  background: #fff;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  color: #467BFB;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 0.5px solid gray;
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color:  #467BFB;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color:  #467BFB;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #467BFB;
+  border: none;
+  padding: 12px;
+  color:  #467BFB;
+  margin: 16px 0;
+  font-size: 16px;
+}
+.btn-outline-info {
+  color: #fff
+  border-color: #0dcaf0;
+  background-color: #467BFB;
+

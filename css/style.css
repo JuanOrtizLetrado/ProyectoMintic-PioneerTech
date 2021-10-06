@@ -19,6 +19,7 @@ body {
 
 h1 {
 	line-height: 1.1;
+	color:#F9C136;
 }
 
 /* Ends basic desing */
@@ -33,8 +34,7 @@ h1 {
 .hero {
 	width: 100%;
 	height: 100vh;
-	background: url(img/laptop.png);
-	
+	background:url(img/laptop.jpg);
 	background-blend-mode: color-burn;
 	background-repeat: no-repeat;
 	background-position: left center;
