@@ -1,26 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=3.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/styleRegister.css">
   <link rel="stylesheet" href="./css/Login-.css">
-  <title>Formulario Registro</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <title>Login</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilos.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+<style>
+  h1 { color: #aabef5fd; }
+</style>
 </head>
-<body>
-  <!-- <section class="form-register">
-    <h4>Regístrate</h4>
-    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
-    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
-    <input class="controls" type="email" name="correo" id="correo" placeholder="Correo electrónico">
-    <input class="controls" type="password" name="correo" id="correo" placeholder="Contraseña">
-    <input class="controls" type="password" name="correo" id="correo" placeholder="Repite contraseña">
-     <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p> -->
-    <!-- <input class="botons" type="submit" value="Registrar">
-    <p><a href="#">¿Ya tengo Cuenta?</a></p>
-  </section> --> -->
 
+<body>
+
+  <section class="Login-">
+    <h1>DB Conection</h1>
+    <div id="app">
+      <!-- <form action=""> -->
+        <p class="login button"> 
+          <button id="button-login">Iniciar Session</button>
+          <button id="button-logout"
+                class="hidden">Salir</button>
+                <form id="todo-form"
+                  class="hidden">
+                  <div id="user-info"></div>
+                    <input id="todo-input"
+                       type="text"
+                       placeholder="Ingresa un nuevo producto"
+                       autocomplete="off" />
+                  </form>
+                  <div id="todos-container">
+                    </div>
+          </p>
+        <!-- </form> -->
+      </div>
+  </section>  
+  <!-- Firebase SDK (Software Development Kit) siempre se debe usar y debe ser el primero de colocar -->
+  <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js"></script>
+
+
+  <!-- Adicionar productos de Firebase que vamos a usar -->
+  <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore-compat.js"></script>
+
+  <!-- UUID -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+          integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"></script>
+
+  <script src="app.js"></script>
+
+
+<!-- 
   <section class="Login-">
     <div id="login" class="form">
       <form  action="mysuperscript.php" autocomplete="on"> 
@@ -38,14 +78,14 @@
             <input type="submit" value="Login" /> 
         </p>
         <p class="change_link">
-            Aún no eres miembro
+            ¿Aún no eres miembro?
             <a href="registro.html" class="to_register">Regístrate</a>
         </p>
       </form>
     </div>
 
 
-  </section>
+  </section> -->
 </body>
 </html>
 
