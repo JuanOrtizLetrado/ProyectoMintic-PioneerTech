@@ -16,7 +16,7 @@ const auth = firebase.auth()
 const proveedor = new firebase.auth.GoogleAuthProvider()
 const database = firebase.firestore()
 let usuarioActual;
-let listaTareas = []
+let Productos = []
 
 // Variables DOM
 const btnLogin = document.getElementById('button-login')
@@ -33,9 +33,9 @@ async function login(){
         console.log(respuesta.user.displayName);
         usuarioActual = respuesta.user
 
-        listaTareas = await leerTareas()
+        Productos = await leerTareas()
 
-        pintarBrowser(listaTareas)
+        pintarBrowser(Productos)
 
     } catch (error) {
         console.error(error)
@@ -58,8 +58,8 @@ async function adicionarTarea(texto){
     console.log(respuesta);
     input.value = ''
     // console.log(database.collection('lista-tareas').add(tarea))
-    listaTareas = await leerTareas()
-        pintarBrowser(listaTareas)
+    Productos = await leerTareas()
+        pintarBrowser(Productos)
 }
 
 function pintarBrowser(tareas){
@@ -76,7 +76,7 @@ function pintarBrowser(tareas){
 // Base de datos
 async function guardarTarea(task){
     try{
-       const respuesta = await database.collection('lista-tareas').add(task)
+       const respuesta = await database.collection('Productos').add(task)
        return respuesta
     }catch(error){
         console.error(error)
@@ -86,7 +86,7 @@ async function guardarTarea(task){
 
 async function leerTareas(){
     const tareas = []
-    const respuesta = await database.collection('lista-tareas').get()
+    const respuesta = await database.collection('Productos').get()
     respuesta.forEach(function(item){
         // console.log(item.data());
         tareas.push(item.data())
