@@ -23,7 +23,7 @@ const btnLogin = document.getElementById('button-login')
 const btnLogOut = document.getElementById('button-logout')
 const formulario = document.getElementById('todo-form')
 const input = document.getElementById('todo-input')
-const contendorTarea = document.getElementById('todos-container')
+const contendorTarea =  document.getElementById('todos-container')
 
 console.log(input);
 
@@ -110,6 +110,7 @@ btnLogOut.addEventListener('click', (e)=>{
     btnLogin.classList.remove('hidden')
     btnLogOut.classList.add('hidden')
     formulario.classList.add('hidden')
+    contendorTarea.classList.remove('clean')
 })
 
 // formulario
