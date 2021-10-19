@@ -1,0 +1,39 @@
+header {
+    width: 100%;
+    height: 60px;
+    background: #8a2387c4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 89%, 54%, 0.637), hsla(258, 80%, 56%, 0.637), hsla(302, 60%, 34%, 0.637)), url(img/logo.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  
+  }
+  
+  nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+  }
+  
+  nav > a{
+    color:aliceblue;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  nav > a:hover{
+    text-decoration:overline;
+  }
+  header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
