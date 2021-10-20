@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .Contenedor-del-layout > main{
     height: 100%;
+    overflow-y: scroll;
 }
 
 .Contenedor-del-layout> footer{

@@ -3,7 +3,7 @@ import Index from 'pages';
 import Registro from 'Login/registro';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Admin from 'pages/admin';
-import Layout from 'layouts/layout';
+import Layout2 from 'layouts/layout2';
 
 
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='App'>
       <Router>
-        <Layout>
+        <Layout2>
           <Switch>
             <Route path='/registro'>
               <Registro />
@@ -23,7 +23,7 @@ function App() {
               <Index />
             </Route>
           </Switch>
-        </Layout>
+        </Layout2>
 
       </Router>
 
