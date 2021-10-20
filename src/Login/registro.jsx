@@ -1,12 +1,11 @@
-import Footer from 'components/Footer';
-import Header from 'components/Header';
+
+
 import 'Login/styleRegister.css';
 
 function Registro(){
     return (
-    <body>
-      <Header/>
-      
+  
+      <div className="El-Registro">
     <form action="Index.html">
   <section class="form-register">
     <h4>Regístrate</h4>
@@ -23,8 +22,8 @@ function Registro(){
         </form>
         <br/>
         <br/>
-        <Footer/>
-        </body>  
+     </div>     
+ 
       );
 }
 

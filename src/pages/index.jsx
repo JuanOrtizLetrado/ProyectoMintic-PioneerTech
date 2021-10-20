@@ -1,10 +1,12 @@
 
 import 'styles/style.css';
 import {Link} from 'react-router-dom';
-import Header from 'components/Header';
+
+
 
 function Index(){
     return (
+        
         <section className="hero">
             
             <div className="header">
@@ -87,15 +89,6 @@ function Index(){
                             </div>
                         </div>
                     </div>
-                    </div>
-                </div>
-               
-                <div className="connect">
-                    <div className="container">	
-                        <h4>Síguenos:</h4>				
-                            <a href="https://www.instagram.com" target="_blank"><i className="fab fa-instagram"></i></a>
-                            <a href="https://twitter.com/" target="_blank"><i className="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com" target="_blank"><i className="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </section>

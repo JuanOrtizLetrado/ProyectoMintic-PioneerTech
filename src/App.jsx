@@ -3,29 +3,32 @@ import Index from 'pages';
 import Registro from 'Login/registro';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Admin from 'pages/admin';
+import Layout from 'layouts/layout';
 
 
 
 function App() {
   return (
     <div className='App'>
-       <Router>
+      <Router>
+        <Layout>
           <Switch>
-          <Route path='/registro'>
-           <Registro/>
+            <Route path='/registro'>
+              <Registro />
             </Route>
             <Route path='/Admin'>
-           <Admin/>
+              <Admin />
             </Route>
             <Route path='/'>
-            <Index/>
+              <Index />
             </Route>
           </Switch>
-       
+        </Layout>
+
       </Router>
-      
+
     </div>
-    
+
   );
 }
 
