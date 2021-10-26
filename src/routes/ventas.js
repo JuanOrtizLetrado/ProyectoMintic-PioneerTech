@@ -13,22 +13,22 @@ router.get('/ventas/add', isAuthenticated, (req, res) => {
 });
 
 router.post('/ventas/new-venta', isAuthenticated, async (req, res) => {
-  const { idcliente, nombrecliente, nombrep } = req.body;
+  const { nombrecliente, nombrep, valorp } = req.body;
   const errors = [];
-  if (!idcliente) {
+  if (!nombrecliente) {
     errors.push({text: 'Por favor escriba un título.'});
   }
-  if (!nombrecliente) {
+  if (!nombrep) {
     errors.push({text: 'Por favor escriba una descripción'});
   }
   if (errors.length > 0) {
     res.render('ventas/new-venta', {
       errors,
-      idcliente,
-      nombrecliente
+      nombrecliente,
+      nombrep
     });
   } else {
-    const newVenta = new Venta({idcliente, nombrecliente, nombrep});
+    const newVenta = new Venta({nombrecliente, nombrep, valorp});
     newVenta.user = req.user.id;
     await newVenta.save();
     req.flash('success_msg', 'Se agregó su venta correctamente');
@@ -53,9 +53,9 @@ router.get('/ventas/edit/:id', isAuthenticated, async (req, res) => {
 });
 
 router.put('/ventas/edit-venta/:id', isAuthenticated, async (req, res) => {
-  const {idcliente, nombrecliente, nombrep } = req.body;
-  await Venta.findByIdAndUpdate(req.params.id, {title, description, price}) .lean() ;
-  req.flash('success_msg', 'Nota actualizada correctamente');
+  const {nombrecliente, nombrep, valorp } = req.body;
+  await Venta.findByIdAndUpdate(req.params.id, {nombrecliente, nombrep, valorp}) .lean() ;
+  req.flash('success_msg', 'Venta actualizada correctamente');
   res.redirect('/ventas');
 });
 
