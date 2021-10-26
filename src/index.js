@@ -12,7 +12,7 @@ require('./database');
 require('./config/passport');
 
 // settings
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', exphbs({
   defaultLayout: 'main',
@@ -47,7 +47,7 @@ app.use((req, res, next) => {
 app.use(require('./routes'));
 app.use(require('./routes/users'));
 app.use(require('./routes/notes'));
-
+app.use(require('./routes/ventas'));
 // static files
 app.use(express.static(path.join(__dirname, 'public')));
 
