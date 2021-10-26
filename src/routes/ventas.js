@@ -54,7 +54,7 @@ router.get('/ventas/edit/:id', isAuthenticated, async (req, res) => {
 
 router.put('/ventas/edit-venta/:id', isAuthenticated, async (req, res) => {
   const { nombrecliente, nombrep, valorp } = req.body;
-  await Venta.findByIdAndUpdate(req.params.id, {nombrecliente, nombrep, valorp}) .lean();
+  await Venta.findByIdAndUpdate(req.params.id, {nombrecliente, nombrep, valorp}) .lean() ;
   req.flash('success_msg', 'Venta actualizada correctamente');
   res.redirect('/ventas');
 });

@@ -16,13 +16,14 @@
       <form action="/ventas/edit-venta/{{venta._id}}?_method=PUT" method="POST">
         <input type="hidden" name="_method" value="PUT">
         <div class="form-group">
-          <input type="text" name="nombrecliente" class="form-control" value="{{venta.nombrecliente}}"/>
+          <input type="text" name="nombrecliente" class="form-control" value="{{venta.nombrecliente}}" />
         </div>
         <div class="form-group">
-          <textarea name="Nombreproducto" class="form-control">{{venta.nombrep}}</textarea>
+          <textarea name="nombrep" class="form-control"> {{venta.nombrep}}</textarea>
         </div>
         <div class="form-group">
-          <textarea name="Valor" class="form-control">{{venta.valorp}}</textarea>
+          <input type="number" name="valorp" class="form-control" value="{{venta.valorp}}" />
+          {{!-- <textarea name="Valor" class="form-control">{{venta.valorp}}</textarea> --}}
         </div>
         <div class="form-group">
           <button class="btn btn-primary btn-block" type="submit">
