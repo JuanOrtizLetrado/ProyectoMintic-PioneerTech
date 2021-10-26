@@ -13,7 +13,7 @@ router.get('/ventas/add', isAuthenticated, (req, res) => {
 });
 
 router.post('/ventas/new-venta', isAuthenticated, async (req, res) => {
-  const { nombrecliente, nombrep, valorp } = req.body;
+  const { nombrecliente, nombrep, valorp, cantidadp } = req.body;
   const errors = [];
   if (!nombrecliente) {
     errors.push({text: 'Por favor escriba el nombre del cliente.'});
@@ -28,7 +28,7 @@ router.post('/ventas/new-venta', isAuthenticated, async (req, res) => {
       nombrep
     });
   } else {
-    const newVenta = new Venta({nombrecliente, nombrep, valorp});
+    const newVenta = new Venta({ nombrecliente, nombrep, valorp, cantidadp });
     newVenta.user = req.user.id;
     await newVenta.save();
     req.flash('success_msg', 'Se agregó su venta correctamente');
@@ -53,8 +53,8 @@ router.get('/ventas/edit/:id', isAuthenticated, async (req, res) => {
 });
 
 router.put('/ventas/edit-venta/:id', isAuthenticated, async (req, res) => {
-  const { nombrecliente, nombrep, valorp } = req.body;
-  await Venta.findByIdAndUpdate(req.params.id, {nombrecliente, nombrep, valorp}) .lean() ;
+  const { nombrecliente, nombrep, valorp, cantidadp } = req.body;
+  await Venta.findByIdAndUpdate(req.params.id, { nombrecliente, nombrep, valorp, cantidadp }) .lean() ;
   req.flash('success_msg', 'Venta actualizada correctamente');
   res.redirect('/ventas');
 });

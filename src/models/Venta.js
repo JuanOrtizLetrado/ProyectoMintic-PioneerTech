@@ -14,10 +14,10 @@ const VentaSchema = new Schema({
       type: Number,
       required: true
     },
-    // cantidadp: {
-    //   type: Number,
-    //   required: false
-    // },
+     cantidadp: {
+       type: Number,
+      required: true
+     },
     date: {
       type: Date,
       default: Date.now
