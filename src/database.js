@@ -6,5 +6,5 @@ mongoose.connect('mongodb+srv://JFernando:Aur8snuh6y@cluster0.vjpzo.mongodb.net/
  //   useFindAndModify: false     
 })
 
-.then(db=>console.log('DB is connected'))
+.then(db =>console.log('DB is connected'))
 .catch(err => console.error(err));
